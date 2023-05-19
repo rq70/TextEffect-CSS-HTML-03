@@ -1,0 +1,42 @@
+* {    margin: 0;    padding: 0;    outline: none;}
+:root{  --color-primary:#16384c;  --color-secoundary:#fff;}
+@import url('https://fonts.googleapis.com/css?family=Overpass');
+body {  background: var(--color-secoundary);  margin: 0;  padding: 0;  cursor: none;}
+.container {	position: absolute;	height: 80vh;	padding-top: 20vh;	width: 100%;	overflow: hidden;}
+.left-side {  position: absolute;  height: 100vh;  width: 100vw;  background: var(--color-secoundary);
+  overflow: hidden;  z-index: 3;}
+.right-side {  position: absolute;  height: 100vh;  width: 100vw;  background: var(--color-secoundary);
+  z-index: 3;  overflow: hidden;}
+.hover {  position: absolute;  float: left;  height: 70px;  width: 70px;  cursor: none;  overflow: hidden;}
+.bit-top {	position: absolute;	left: 0%;	top: 0%;	height: 5px;	width: 10px;
+	background: var(--color-primary);  z-index: 10;
+}
+.bit-top-left {	position: absolute;	left: 0%;	top: 5px;	height: 5px;	width: 5px;
+	background: var(--color-primary);  z-index: 10;
+}
+.bit-top-right {	position: absolute;	right: 0%;	top: 0%;	height: 5px;	width: 10px;
+	background: var(--color-primary);  z-index: 10;
+}
+.bit-top-right-2 {	position: absolute;	right: 0%;	top: 0px;	height: 10px;	width: 5px;
+	background:  var(--color-primary);  z-index: 10;
+}
+.bit-bottom-left {	position: absolute;	bottom: 0%;	left: 0px;	height: 10px;	width: 5px;
+	background: var(--color-primary);  z-index: 10;
+}
+.bit-bottom-left-2 {	position: absolute;	bottom: 0%;	left: 0px;	height: 5px;	width: 10px;
+	background: var(--color-primary);  z-index: 10;
+}
+.bit-bottom-right {	position: absolute;	bottom: 0%;	right: 0px;	height: 5px;	width: 10px;
+	background: var(--color-primary);  z-index: 10;
+}
+.bit-bottom-right-2 {	position: absolute;	bottom: 0%;	right: 0px;	height: 10px;	width: 5px;
+	background: var(--color-primary);  z-index: 10;
+}
+.blur {  position: absolute;  color: var(--color-primary);  font-family: 'Overpass', sans-serif;
+  font-size: 64px;  letter-spacing: 20px;  margin: auto;  width: 100%;  filter: blur(5px);  cursor: none;
+  overflow: hidden;  text-align: center;  z-index: 3;
+}
+.focus {  position: absolute;  color: var(--color-primary);  font-family: 'Overpass', sans-serif;
+  font-size: 64px;  letter-spacing: 20px;  margin: auto;  width: 100%;  filter: blur(0px);  cursor: none;
+  overflow: hidden;  text-align: center;  z-index: 2;
+}
